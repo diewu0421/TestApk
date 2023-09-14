@@ -14,8 +14,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.zenglw.mylibrary.MyLib1
 import com.zenglw.mylibrary2.MyLib2
+import com.zenglw.mylibrary3.MyLib3
 import com.zenglw.testapk.ui.theme.TestApkTheme
 
+/**
+ * https://github.com/kezong/fat-aar-android/blob/master/README_CN.md
+ */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +35,7 @@ class MainActivity : ComponentActivity() {
             }
         }
 
+        MyLib3.testLib3()
     }
 }
 

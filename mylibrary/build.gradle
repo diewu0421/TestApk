@@ -6,7 +6,6 @@ plugins {
 
 }
 
-apply plugin: 'com.kezong.fat-aar'
 android {
     namespace 'com.zenglw.mylibrary'
     compileSdk 33
@@ -35,6 +34,11 @@ android {
 
 }
 
+apply plugin: 'com.kezong.fat-aar'
+
+fataar {
+    transitive = true
+}
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.8.0'
